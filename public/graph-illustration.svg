@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" rx="12" fill="white"/>
+  
+  <!-- Grid Lines -->
+  <path d="M60 40L60 360" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M60 200L540 200" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M540 40L540 360" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- X-Axis Labels -->
+  <text x="60" y="380" font-family="Inter, sans-serif" font-size="12" fill="#6B7280">2018</text>
+  <text x="180" y="380" font-family="Inter, sans-serif" font-size="12" fill="#6B7280">2019</text>
+  <text x="300" y="380" font-family="Inter, sans-serif" font-size="12" fill="#6B7280">2020</text>
+  <text x="420" y="380" font-family="Inter, sans-serif" font-size="12" fill="#6B7280">2021</text>
+  <text x="520" y="380" font-family="Inter, sans-serif" font-size="12" fill="#6B7280">2022</text>
+  
+  <!-- Y-Axis Labels -->
+  <text x="40" y="50" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" text-anchor="end">100%</text>
+  <text x="40" y="200" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" text-anchor="end">50%</text>
+  <text x="40" y="350" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" text-anchor="end">0%</text>
+  
+  <!-- Data Line 1 -->
+  <path d="M60 300 C180 280, 240 180, 300 200 C360 220, 420 160, 480 140 C500 132, 520 128, 540 120" 
+        stroke="#3B82F6" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Data Line 2 -->
+  <path d="M60 260 C180 200, 240 240, 300 220 C360 200, 420 240, 480 200 C500 188, 520 170, 540 160" 
+        stroke="#10B981" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-dasharray="8 4"/>
+  
+  <!-- Data Points for Line 1 -->
+  <circle cx="60" cy="300" r="4" fill="#3B82F6"/>
+  <circle cx="180" cy="280" r="4" fill="#3B82F6"/>
+  <circle cx="240" cy="180" r="4" fill="#3B82F6"/>
+  <circle cx="300" cy="200" r="4" fill="#3B82F6"/>
+  <circle cx="360" cy="220" r="4" fill="#3B82F6"/>
+  <circle cx="420" cy="160" r="4" fill="#3B82F6"/>
+  <circle cx="480" cy="140" r="4" fill="#3B82F6"/>
+  <circle cx="540" cy="120" r="4" fill="#3B82F6"/>
+  
+  <!-- Data Points for Line 2 -->
+  <circle cx="60" cy="260" r="4" fill="#10B981"/>
+  <circle cx="180" cy="200" r="4" fill="#10B981"/>
+  <circle cx="240" cy="240" r="4" fill="#10B981"/>
+  <circle cx="300" cy="220" r="4" fill="#10B981"/>
+  <circle cx="360" cy="200" r="4" fill="#10B981"/>
+  <circle cx="420" cy="240" r="4" fill="#10B981"/>
+  <circle cx="480" cy="200" r="4" fill="#10B981"/>
+  <circle cx="540" cy="160" r="4" fill="#10B981"/>
+  
+  <!-- Legend -->
+  <rect x="360" y="60" width="12" height="12" rx="2" fill="#3B82F6"/>
+  <text x="380" y="70" font-family="Inter, sans-serif" font-size="12" fill="#1F2937">AI Adoption</text>
+  
+  <rect x="360" y="90" width="12" height="12" rx="2" fill="#10B981" fill-opacity="0.2"/>
+  <path d="M362 94L370 102M370 94L362 102" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  <text x="380" y="100" font-family="Inter, sans-serif" font-size="12" fill="#1F2937">Traditional Solutions</text>
+  
+  <!-- Chart Title -->
+  <text x="60" y="30" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1F2937">Business Growth with AI Solutions</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="500" cy="80" r="8" fill="#EFF6FF" fill-opacity="0.5"/>
+  <circle cx="80" cy="100" r="5" fill="#ECFDF5" fill-opacity="0.5"/>
+  <circle cx="550" cy="300" r="6" fill="#EFF6FF" fill-opacity="0.5"/>
+  <circle cx="200" cy="60" r="4" fill="#ECFDF5" fill-opacity="0.5"/>
+</svg>
