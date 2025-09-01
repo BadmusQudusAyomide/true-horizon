@@ -57,9 +57,9 @@ const Navbar = () => {
         if (self.isActive) {
           // Scrolled down - compact navbar
           gsap.to(nav, {
-            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            backgroundColor: 'rgba(255, 255, 255, 0.06)',
             backdropFilter: 'blur(20px)',
-            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+            boxShadow: '0 10px 30px rgba(34, 211, 238, 0.10)',
             duration: 0.3,
             ease: 'power2.out'
           });
@@ -71,9 +71,9 @@ const Navbar = () => {
         } else {
           // At top - expanded navbar
           gsap.to(nav, {
-            backgroundColor: 'rgba(255, 255, 255, 0.95)',
-            backdropFilter: 'blur(10px)',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            backdropFilter: 'blur(12px)',
+            boxShadow: '0 6px 24px rgba(34, 211, 238, 0.08)',
             duration: 0.3,
             ease: 'power2.out'
           });
@@ -99,7 +99,7 @@ const Navbar = () => {
       let underline = a.querySelector<HTMLDivElement>('.nav-underline');
       if (!underline) {
         underline = document.createElement('div');
-        underline.className = 'nav-underline pointer-events-none absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 origin-left transition-transform duration-300';
+        underline.className = 'nav-underline pointer-events-none absolute bottom-0 left-0 w-full h-0.5 bg-cyan-400 transform scale-x-0 origin-left transition-transform duration-300';
         a.appendChild(underline);
       }
 
@@ -185,7 +185,7 @@ const Navbar = () => {
     >
       <nav 
         ref={navRef}
-        className="w-full bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300"
+        className="w-full bg-white/5 backdrop-blur-md border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300"
         style={{ height: '80px' }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
@@ -194,9 +194,9 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <span 
                 ref={logoRef}
-                className="text-2xl font-bold text-gray-900 cursor-pointer"
+                className="text-2xl font-bold text-white cursor-pointer"
               >
-                True<span className="text-blue-600">Horizon</span>
+                True<span className="text-cyan-400">Horizon</span>
               </span>
             </div>
 
@@ -205,11 +205,11 @@ const Navbar = () => {
               ref={linksRef}
               className="hidden md:ml-10 md:flex md:items-center gap-x-8"
             >
-              <a href="#home" className="relative inline-flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors">Home</a>
-              <a href="#pricing" className="relative inline-flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors">Pricing</a>
-              <a href="#about" className="relative inline-flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors">About</a>
-              <a href="#case-studies" className="relative inline-flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors">Case Studies</a>
-              <a href="#blog" className="relative inline-flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors">Blog</a>
+              <a href="#home" className="relative inline-flex items-center text-cyan-100/80 hover:text-white px-3 py-2 text-base font-medium transition-colors">Home</a>
+              <a href="#pricing" className="relative inline-flex items-center text-cyan-100/80 hover:text-white px-3 py-2 text-base font-medium transition-colors">Pricing</a>
+              <a href="#about" className="relative inline-flex items-center text-cyan-100/80 hover:text-white px-3 py-2 text-base font-medium transition-colors">About</a>
+              <a href="#case-studies" className="relative inline-flex items-center text-cyan-100/80 hover:text-white px-3 py-2 text-base font-medium transition-colors">Case Studies</a>
+              <a href="#blog" className="relative inline-flex items-center text-cyan-100/80 hover:text-white px-3 py-2 text-base font-medium transition-colors">Blog</a>
             </div>
 
             {/* Desktop CTA */}

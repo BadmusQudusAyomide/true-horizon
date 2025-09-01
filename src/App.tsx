@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import LoadingScreen from './components/LoadingScreen';
 import PremiumAnimations from './components/PremiumAnimations';
+import GlobalBackground from './components/GlobalBackground';
+import FeaturesSection from './components/FeaturesSection';
 import { useLenis } from './hooks/useLenis';
 import { useGSAP } from './hooks/useGSAP';
 import './App.css';
@@ -24,50 +26,16 @@ function App() {
   }
   return (
     <div ref={containerRef} className="min-h-screen">
+      <GlobalBackground />
       <PremiumAnimations />
       <Navbar />
       
       <Hero />
 
-      {/* Features Section */}
-      <section className="animate-section py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Everything You Need In One Place</h2>
-            <p className="text-xl text-gray-600">Powerful features designed to make your business seamless.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="animate-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Custom AI agent engineering →</h3>
-              <p className="text-gray-600">We design, deploy, and maintain custom AI agents specifically tailored to your business growth goals.</p>
-            </div>
-            
-            <div className="animate-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Fully Managed automation pipelines</h3>
-              <p className="text-gray-600">Robust data infrastructure and ingestion processes are a critical component in how we build out our systems.</p>
-            </div>
-            
-            <div className="animate-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Performance analytic dashboard</h3>
-              <p className="text-gray-600">Easily track ROI and efficiency gains with custom metrics on your AI agent's performance.</p>
-            </div>
-            
-            <div className="animate-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Intelligent access control</h3>
-              <p className="text-gray-600">Manage agent permissions with your teams to ensure secure operations across your organization.</p>
-            </div>
-            
-            <div className="animate-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 md:col-span-2">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Secure and compliant protocols</h3>
-              <p className="text-gray-600">Technology architecture that is fully hosted in the cloud, ensuring compliance with SOC-2, ISO, and other industry standards.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeaturesSection />
 
       {/* AI Integration Section */}
-      <section className="animate-section py-20 bg-white">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
@@ -96,7 +64,7 @@ function App() {
       </section>
 
       {/* Stats Section */}
-      <section className="animate-section py-20 bg-blue-600">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
             <div className="animate-card">
@@ -116,7 +84,7 @@ function App() {
       </section>
 
       {/* Process Section */}
-      <section className="animate-section py-20 bg-gray-50">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
@@ -145,7 +113,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="animate-section py-20 bg-white">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Real Businesses, Real Results</h2>
@@ -181,7 +149,7 @@ function App() {
       </section>
 
       {/* FAQ Section */}
-      <section className="animate-section py-20 bg-gray-50">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
@@ -218,7 +186,7 @@ function App() {
       </section>
 
       {/* Recent Articles Section */}
-      <section className="animate-section py-20 bg-white">
+      <section className="animate-section py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Articles</h2>
@@ -241,7 +209,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-transparent">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Unlock hidden potential within your business</h2>
           <p className="text-xl text-blue-100 mb-8">Unlock untapped potential with safe, responsible, and powerful AI solutions.</p>
